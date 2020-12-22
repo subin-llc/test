@@ -1,4 +1,4 @@
-name: "MLCommons"
+name: "mlcommons-bot"
 on:
   issue_comment:
     types: [created]
@@ -6,7 +6,7 @@ on:
     types: [opened,closed,synchronize]
 
 jobs:
-  CLA-bot:
+  cla-check:
     runs-on: ubuntu-latest
     steps:
       - name: "MLCommons CLA bot"
